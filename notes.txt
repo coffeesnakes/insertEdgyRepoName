@@ -1,3 +1,7 @@
 1. npm install
 
 2. set up server and database, make sure they're running and connected
+
+3. have static data from a file render and be mapped out into entries in a list.
+
+4.

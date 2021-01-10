@@ -9,12 +9,10 @@ const db = require('../database');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 // server client
-// app.use("/", express.static(path.join(__dirname, "../client/dist")));
+app.use("/", express.static(path.join(__dirname, "../client/dist")));
 
 // routes
-app.get('/', (req, res)=> {
-  res.send('server get helloFriend')
-})
+
 
 // listener
 app.listen(port, ()=>(console.log(`alive on port:${port}`)));

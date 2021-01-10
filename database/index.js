@@ -18,7 +18,6 @@ const weebSchema = new mongoose.Schema({
   description: String,
   director: String,
   producer: String,
-  rating: String
 });
 
 const Weeb = mongoose.model("Weebs", weebSchema);
