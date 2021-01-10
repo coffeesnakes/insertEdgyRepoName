@@ -15,14 +15,25 @@ body {
 }
 
 ul {
-  padding-left: 0px;
+  list-style-type: circle;
+  border: 2px solid #1DA1F2;
+  background-color: #14171A;
 }
 
-.list {
+li {
+  margin: 15px;
+  background-color: #14171A;
+}
+
+.listed {
    list-style-type: none;
    padding: 10px;
    font-size: 15px;
    justify-content: space-between;
    font-weight: 300;
    margin: 20px 0 0;
+}
+
+.header {
+  color:#E1E8ED;
 }

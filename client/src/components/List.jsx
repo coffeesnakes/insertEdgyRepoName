@@ -1,10 +1,9 @@
 import React from 'react';
-import data from '../data.js';
 import Entry from './Entry.jsx';
 
-const List = () => (
-  <ul className="list">
-    {data.map(film=>( <Entry film={film}/>))}
+const List = ({films}) => (
+  <ul className="listed">
+    {films.map((film, i)=>( <Entry film={film} key={i}/>))}
   </ul>
 )
 export default List;
