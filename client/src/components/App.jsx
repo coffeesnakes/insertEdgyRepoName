@@ -7,7 +7,8 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      films: []
+      films: [],
+      visible: true
     };
     // bindings here
     this.getFilms = this.getFilms.bind(this);
@@ -29,7 +30,15 @@ class App extends React.Component {
     return (
       <div>
         < Header />
-        < List films={this.state.films}/>
+         < List films={this.state.films}/>
+
+
+        {this.state.visible ? < List films={this.state.films}/> : null}
+        <button onClick={()=>{
+          this.setState({visible: !this.state.visible})
+        }}> hide the list</button>
+
+
       </div>
     )
   }
